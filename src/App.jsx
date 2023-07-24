@@ -1,10 +1,9 @@
-import { Button } from 'primereact/button';
+import Navbar from "./components/Navbar"
 function App() {
 
   return (
     <>
-     <h1>Signs Language App</h1>
-     <Button>Hello</Button>
+      <Navbar />
     </>
   )
 }
