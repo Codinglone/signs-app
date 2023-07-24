@@ -12,7 +12,8 @@
   "dependencies": {
     "primereact": "^9.6.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "styled-components": "^6.0.5"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
