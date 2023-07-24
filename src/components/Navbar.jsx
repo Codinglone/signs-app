@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { Button } from "primereact/button";
 import 'primeicons/primeicons.css';
-
 const Navbar = () => {
   return (
     <Nav>
