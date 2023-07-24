@@ -1,22 +1,76 @@
+import { useState } from "react";
 import logoBlue from "../assets/logos/logo-blue.png";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { Button } from "primereact/button";
-import 'primeicons/primeicons.css';
+import "primeicons/primeicons.css";
 const Navbar = () => {
+  const [active, setActive] = useState("home");
   return (
     <Nav>
       <div className="brand">
         <img src={logoBlue} alt="logo" />
       </div>
       <div className="menus">
-        <Link to="#" className="link">Home</Link>
-        <Link to="#" className="link">Dictionary</Link>
-        <Link to="#" className="link">Interactive</Link>
-        <Link to="#" className="link">Sandbox</Link>
-        <Link to="#" className="link">About Us</Link>
+        <Link
+          to="#"
+          className="link"
+          style={
+            active === "home" ? { color: "#4890fc" } : { color: "#212427" }
+          }
+          onClick={() => setActive("home")}
+        >
+          Home
+        </Link>
+        <Link
+          to="#"
+          className="link"
+          style={
+            active === "dictionary"
+              ? { color: "#4890fc" }
+              : { color: "#212427" }
+          }
+          onClick={() => setActive("dictionary")}
+        >
+          Dictionary
+        </Link>
+        <Link
+          to="#"
+          className="link"
+          style={
+            active === "interactive"
+              ? { color: "#4890fc" }
+              : { color: "#212427" }
+          }
+          onClick={() => setActive("interactive")}
+        >
+          Interactive
+        </Link>
+        <Link
+          to="#"
+          className="link"
+          style={
+            active === "sandbox" ? { color: "#4890fc" } : { color: "#212427" }
+          }
+          onClick={() => setActive("sandbox")}
+        >
+          Sandbox
+        </Link>
+        <Link
+          to="#"
+          className="link"
+          style={
+            active === "about" ? { color: "#4890fc" } : { color: "#212427" }
+          }
+          onClick={() => setActive("about")}
+        >
+          About Us
+        </Link>
       </div>
-      <div id="contact" style={{width: '30%', display: 'flex', justifyContent: 'end'}}>
+      <div
+        id="contact"
+        style={{ width: "30%", display: "flex", justifyContent: "end" }}
+      >
         <Button label="Get In Touch" severity="info" icon="pi pi-phone" />
       </div>
     </Nav>
@@ -42,25 +96,23 @@ const Nav = styled.nav`
       max-width: 20%;
       cursor: pointer;
     }
-
   }
 
   .menus {
     display: flex;
     justify-content: space-between;
-    width: calc(100vw / 2.50);
+    width: calc(100vw / 2.5);
 
     .link {
-        text-decoration: none;
-        color: #212427;
-        font-weight: 600;
-        font-size: 1.2rem;
+      text-decoration: none;
+      color: #212427;
+      font-weight: 600;
+      font-size: 1.2rem;
 
-        &:hover {
-            color: #4890fc;
-        }
+      &:hover {
+        color: #4890fc;
+      }
     }
-
   }
 `;
 
