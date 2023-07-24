@@ -18,7 +18,7 @@ const Navbar = () => {
         <Link to="#" className="link">About Us</Link>
       </div>
       <div id="contact" style={{width: '30%', display: 'flex', justifyContent: 'end'}}>
-        <Button label="Get In Touch" icon="pi pi-phone" />
+        <Button label="Get In Touch" severity="info" icon="pi pi-phone" />
       </div>
     </Nav>
   );
