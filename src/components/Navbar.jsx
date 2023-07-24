@@ -81,6 +81,7 @@ const Nav = styled.nav`
   display: flex;
   align-items: center;
   overflow: hidden;
+  background: white;
   width: 100%;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   padding: 1rem 2rem;
