@@ -14,12 +14,19 @@ const Sandbox = () => {
         rows={5}
         cols={40}
       />
+      <SignsField>
+        Signs area
+      </SignsField>
     </Container>
   );
 };
 
 const Container = styled.div`
   padding: 1rem 2rem;
+`
+
+const SignsField = styled.section`
+  padding: 1rem 0;
 `
 
 export default Sandbox;
