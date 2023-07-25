@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { InputTextarea } from "primereact/inputtextarea";
 import styled from "styled-components";
-import { one, two, three, four, five, six, seven, eight, nine } from "../constants";
+import { one, two, three, four, five, six, seven, eight, nine, zero } from "../constants";
 
 const Sandbox = () => {
   const [value, setValue] = useState('');
@@ -39,6 +39,9 @@ const Sandbox = () => {
           break;
         case "9":
           images.push(<img className="sign-img" key={i} src={nine} alt="Nine" />);
+          break;
+        case "0":
+          images.push(<img className="sign-img" key={i} src={zero} alt="Zero" />);
           break;
         default:
           // If the character is not a number, skip it or display an error message
