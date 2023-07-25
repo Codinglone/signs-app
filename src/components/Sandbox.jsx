@@ -159,7 +159,8 @@ const Sandbox = () => {
 
   return (
     <Container>
-      <h2>Enter a word or phrase</h2>
+      <h1 style={{color: '#4890fc'}}>Learn Signs Language online</h1>
+      <h3>Enter a word, phrase or number in the field below</h3>
       <InputTextarea
         autoResize
         value={value}
