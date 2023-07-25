@@ -13,7 +13,7 @@ const Navbar = () => {
       </div>
       <div className="menus">
         <Link
-          to="#"
+          to="/"
           className="link"
           style={
             active === "home" ? { color: "#4890fc" } : { color: "#212427" }
@@ -23,7 +23,7 @@ const Navbar = () => {
           Home
         </Link>
         <Link
-          to="#"
+          to="/dictionary"
           className="link"
           style={
             active === "dictionary"
@@ -35,7 +35,7 @@ const Navbar = () => {
           Dictionary
         </Link>
         <Link
-          to="#"
+          to="/interactive"
           className="link"
           style={
             active === "interactive"
@@ -47,7 +47,7 @@ const Navbar = () => {
           Interactive
         </Link>
         <Link
-          to="#"
+          to="/sandbox"
           className="link"
           style={
             active === "sandbox" ? { color: "#4890fc" } : { color: "#212427" }
@@ -57,7 +57,7 @@ const Navbar = () => {
           Sandbox
         </Link>
         <Link
-          to="#"
+          to="/about"
           className="link"
           style={
             active === "about" ? { color: "#4890fc" } : { color: "#212427" }
