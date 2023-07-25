@@ -1,3 +1,8 @@
 body {
   font-family: var(--font-family);
 }           
+
+
+.sign-img {
+  width: 4rem;
+}
